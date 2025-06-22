@@ -1,3 +1,6 @@
+
+
+
 /* Reset e base */
 * {
   margin: 0;
@@ -8,6 +11,101 @@
   line-height: 1.6;
 }
 
+
+/* ========================= */
+/* 📱 RESPONSIVIDADE MOBILE */
+/* ========================= */
+@media screen and (max-width: 768px) {
+
+  header {
+    padding: 1rem;
+    max-height: none;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  nav a {
+    display: block;
+    margin: 0.5rem 0;
+    text-align: center;
+  }
+
+  section {
+    padding: 1rem;
+    margin: 1rem 0.5rem;
+  }
+
+  section img {
+    width: 100%;
+    float: none !important;
+    margin: 1rem 0;
+    display: block;
+  }
+
+  section p,
+  section h1,
+  section li {
+    font-size: 1rem;
+  }
+
+  #toggle-sound {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+  }
+}
+
+
+/* ========================== */
+/* 💻 TABLETS até 1024px */
+/* ========================== */
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+
+  header {
+    padding: 1.5rem;
+  }
+
+  header h1 {
+    font-size: 2.2rem;
+  }
+
+  header p {
+    font-size: 1.2rem;
+  }
+
+  nav a {
+    margin: 0 0.5rem;
+    font-size: 1.1rem;
+  }
+
+  section img {
+    width: 60%;
+    float: none;
+    margin: 1rem auto;
+    display: block;
+  }
+
+  section {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+
+  section p,
+  section h1,
+  section li {
+    font-size: 1.05rem;
+  }
+}
+
+
+
+
+/* ========================== */
 html, body {
   height: 100%;
   position: relative;
