@@ -2,64 +2,85 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>BMW Energia – CGH</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BMW Energia – CGH</title>
+
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Three.js, se necessário para efeitos adicionais -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
 </head>
 
 <body>
-    <header class="header">
-        <h1>BMW Energia</h1>
-        <p>Pequena Central Hidrelétrica – Sustentabilidade em cada gota</p>
-        <nav>
-            <a href="#index">Home</a>
-            <a href="#sobre">Sobre</a>
-            <a href="#tecnologias">Tecnologias</a>
-            <a href="#contato">Contato</a>
-        </nav>
-    </header>
-    <section id="index">
+  <!-- Vídeo de fundo -->
+  <video id="bg-video" autoplay loop playsinline muted></video>
 
-        <h2>BMW Energia</h2>
-        <p>Com a Pequena Central Hidrelétrica, contribuímos para um futuro sustentável.</p>
-        <img src="img/cgh.jpg" alt="Imagem da Pequena Central Hidrelétrica" class="cgh-image">
-        <p>Localizada no coração da natureza, nossa CGH utiliza a força da água para gerar energia limpa e renovável.
-            Com uma capacidade instalada de 2 MW, ela é um exemplo de como a tecnologia pode ser aliada à preservação
-            ambiental.</p>
-        <p>A BMW Energia é comprometida com a sustentabilidade e a inovação, oferecendo soluções energéticas que
-            respeitam o meio ambiente e promovem o desenvolvimento local.</p>
+  <!-- Botão para controle de som -->
+  <div style="position: fixed; bottom: 10px; right: 10px; z-index: 2;">
+    <button onclick="toggleAudio()">🔊</button>
+  </div>
 
-    </section>
+  <!-- Conteúdo principal -->
+  <header class="header">
+    <h1>BMW Energia</h1>
+    <p>Pequena Central Hidrelétrica – Sustentabilidade em cada gota</p>
+    <nav>
+      <a href="#index">Home</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#tecnologias">Tecnologias</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
 
-    <section id="sobre">
-        <h2>Sobre a CGH</h2>
-        <p>A Pequena Central Hidrelétrica (CGH) da BMW Energia é projetada para gerar energia de forma eficiente e
-            sustentável, aproveitando os recursos hídricos disponíveis.</p>
-    </section>
+  <section id="index">
+  <h2>BMW Energia</h2>
+  <img src="/imgs/cgh_blue_sky.png" alt="Imagem da Pequena Central Hidrelétrica" class="cgh-image" />
+  <p>A BMW Energia atua com foco na geração de energia renovável e no desenvolvimento sustentável de Pequenas Centrais Hidrelétricas (CGHs) no Brasil. Nosso propósito é entregar soluções energéticas eficientes com o menor impacto ambiental possível.</p>
+  <p>Com experiência consolidada no setor elétrico, buscamos alinhar tecnologia, responsabilidade ambiental e compromisso social em cada etapa dos nossos projetos, desde o planejamento até a operação das usinas.</p>
+  <p>Investimos em inovação para otimizar a performance energética e garantir o uso consciente dos recursos hídricos, promovendo geração de valor para as comunidades e o meio ambiente.</p>
+  <p>Nossa visão é ser referência em geração limpa, desenvolvendo projetos que respeitam a natureza, contribuem com a matriz energética brasileira e geram benefícios duradouros para a sociedade.</p>
+</section>
 
-    <section id="tecnologias">
-        <h2>Tecnologias Utilizadas</h2>
-        <ul>
-            <li>Turbinas hidráulicas de alta eficiência</li>
-            <li>Sistemas de monitoramento em tempo real</li>
-            <li>Infraestrutura de baixo impacto ambiental</li>
-        </ul>
-    </section>
-    <section id="contato">
-        <h2>Contato</h2>
-        <p>Para mais informações, entre em contato conosco:</p>
-        <ul>
-            <li>Email:
-                <a href="mailto:contato@bmwenergia.com.br">contato@bmwenergia.com.br</a>
-            </li>
-        </ul>
-    </section>
+<section id="sobre">
+  <h2>Sobre a CGH</h2>
+  <img src="/imgs/bmwlogo.png" alt="Logo BMW Energia" class="cgh-image" />
+  <p>Localizada em Peabiru, no estado do Paraná, a CGH Rio do Campo é uma Pequena Central Hidrelétrica com capacidade instalada de 2 MW. Projetada no modelo de fio d’água, sua operação não requer grandes reservatórios, reduzindo significativamente os impactos ambientais.</p>
+  <p>A usina utiliza turbinas Kaplan de alta eficiência, capazes de gerar energia de forma contínua e segura, mesmo em regimes de vazão variáveis. Conta ainda com sistemas de automação e monitoramento remoto, garantindo confiabilidade na operação.</p>
+  <p>A CGH Rio do Campo atende cerca de 9.000 residências e contribui com o desenvolvimento econômico e ambiental da região, gerando empregos diretos e indiretos, além de recolher ICMS Ecológico para o município.</p>
+</section>
 
+ <section id="tecnologias">
+  <h2>Tecnologias Utilizadas</h2>
+  <img src="/imgs/turbina-gerador.png" alt="Turbina e Gerador" class="cgh-image" />
+  <p>Para garantir máxima eficiência e sustentabilidade, a BMW Energia adota tecnologias de ponta em todas as etapas do ciclo de vida das suas CGHs. Nossas soluções são pensadas para otimizar o uso dos recursos naturais e facilitar o monitoramento contínuo da operação.</p>
+  <ul>
+    <li>Turbinas hidráulicas de alto rendimento, dimensionadas de acordo com as características do rio.</li>
+    <li>Sistemas de supervisão e controle em tempo real, com sensores de vazão, pressão e temperatura.</li>
+    <li>Infraestrutura de adução eficiente e compacta, com menor área de ocupação e impacto.</li>
+    <li>Passagens para fauna aquática integradas ao projeto, respeitando a biodiversidade local.</li>
+  </ul>
+  <p>Além dessas soluções, as CGHs da BMW Energia utilizam ferramentas preditivas e plataformas digitais para tomada de decisão em manutenção, reduzindo riscos e paradas inesperadas.</p>
+  <p>Nosso compromisso é aplicar a engenharia de forma responsável, garantindo geração de energia com respeito ao meio ambiente e às comunidades envolvidas.</p>
+</section>
 
-    <footer>
-        <p>© 2025 BMW Energia</p>
-    </footer>
+ <section id="contato">
+  <h2>Contato</h2>
+  <p>Para mais informações sobre nossos projetos, parcerias ou oportunidades, entre em contato com a equipe da BMW Energia. Estamos à disposição para atender clientes, fornecedores e instituições interessadas em soluções sustentáveis.</p>
+  <ul>
+    <li>Email: <a href="mailto:contato@bmwenergia.com.br">contato@bmwenergia.com.br</a></li>
+    <li>Telefone: (43) 99999-9999</li>
+    <li>Endereço: Rua das Energias, 100 – Peabiru/PR</li>
+  </ul>
+</section>
+
+  <footer>
+    <p>© 2025 BMW Energia</p>
+  </footer>
+<button id="toggle-sound" onclick="toggleAudio()">🔊</button>
+  <!-- JS externo -->
+  <script src="cachoeira.js"></script>
 </body>
 
 </html>

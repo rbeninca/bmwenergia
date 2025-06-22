@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+<path d="M 512.00,80.00 L 580.88,133.70 L 667.56,144.44 L 678.30,231.12 L 732.00,300.00 L 678.30,368.88 L 667.56,455.56 L 580.88,466.30 L 512.00,520.00 L 443.12,466.30 L 356.44,455.56 L 345.70,368.88 L 292.00,300.00 L 345.70,231.12 L 356.44,144.44 L 443.12,133.70 Z" fill="#29596A"/>
+<path d="M 512.00,300.00 L 416.78,168.94 A 162.00,162.00 0 0,1 607.22,168.94 Z" fill="white"/>
+<path d="M 512.00,300.00 L 607.22,168.94 A 162.00,162.00 0 0,1 666.07,350.06 Z" fill="white"/>
+<path d="M 512.00,300.00 L 666.07,350.06 A 162.00,162.00 0 0,1 512.00,462.00 Z" fill="white"/>
+<path d="M 512.00,300.00 L 512.00,462.00 A 162.00,162.00 0 0,1 357.93,350.06 Z" fill="white"/>
+<path d="M 512.00,300.00 L 357.93,350.06 A 162.00,162.00 0 0,1 416.78,168.94 Z" fill="white"/>
+<path d="M 0 386 C 235 340 455 430 1024 380 L 1024 446 C 455 496 235 405 0 455 Z" fill="#154C6C"/>
+<path d="M 0 412 C 215 365 504 455 1024 402 L 1024 470 C 504 520 215 430 0 480 Z" fill="#1C6672"/>
+<path d="M 0 438 C 195 395 554 475 1024 424 L 1024 492 C 554 542 195 460 0 510 Z" fill="#2FA4B7"/>
+<text x="512" y="800" text-anchor="middle" font-family="Montserrat, sans-serif" font-weight="700" font-size="120" fill="#1F3446">BMW</text>
+<text x="512" y="900" text-anchor="middle" font-family="Montserrat, sans-serif" font-weight="400" font-size="70" fill="#2FA4B7">ENERGIA</text>
+</svg>
