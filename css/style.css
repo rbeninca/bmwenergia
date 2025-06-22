@@ -1,0 +1,34 @@
+body {
+  font-family: sans-serif;
+  margin: 0; padding: 0;
+  line-height: 1.6;
+}
+header {
+  background: linear-gradient(90deg, #005a9c, #003d66);
+  color: white;
+  padding: 1rem;
+}
+header.hero {
+  background: #005a9c;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+nav a {
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+section#destaque {
+  padding: 2rem;
+  text-align: center;
+}
+footer {
+  background: #f2f2f2;
+  text-align: center;
+  padding: 1rem;
+}
+section#destaque h2 {
+  color: #005a9c;
+}
+section#destaque p {
